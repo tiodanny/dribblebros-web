@@ -3,7 +3,16 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const FOUNDERS = [
+const FOUNDERS: Array<{
+  name: string;
+  alias: string;
+  role: string;
+  roles: string[];
+  photo: string;
+  photoPosition: string;
+  photoScale: number;
+  url?: string;
+}> = [
   {
     name: "Tío Danny",
     alias: "Daniel Martínez",
@@ -18,6 +27,7 @@ const FOUNDERS = [
     photo: "/photos/founders/danny/danny-01.jpg",
     photoPosition: "40% 72%",
     photoScale: 1.7,
+    url: "https://tiodanny.com",
   },
   {
     name: "Bryan Nelson",
@@ -103,9 +113,21 @@ export default function About() {
                   </div>
                 </div>
                 <div className="absolute bottom-6 left-6 right-6">
-                  <div className="display text-4xl md:text-6xl text-white leading-none">
-                    {f.name}
-                  </div>
+                  {f.url ? (
+                    <a
+                      href={f.url}
+                      rel="author noopener"
+                      target="_blank"
+                      className="display text-4xl md:text-6xl text-white leading-none hover:text-flame transition-colors block"
+                      aria-label={`${f.name} — sitio personal`}
+                    >
+                      {f.name}
+                    </a>
+                  ) : (
+                    <div className="display text-4xl md:text-6xl text-white leading-none">
+                      {f.name}
+                    </div>
+                  )}
                 </div>
               </div>
 
