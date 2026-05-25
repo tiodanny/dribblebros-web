@@ -6,6 +6,7 @@ import Work from "@/components/Work";
 import CanchaViva from "@/components/CanchaViva";
 import Community from "@/components/Community";
 import About from "@/components/About";
+import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <CanchaViva />
         <Community />
         <About />
+        <FAQ />
         <Contact />
       </main>
       <Footer />

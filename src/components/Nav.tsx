@@ -9,6 +9,7 @@ const LINKS = [
   { label: "El trabajo", href: "#trabajo" },
   { label: "Cancha Viva", href: "#cancha-viva" },
   { label: "Sobre", href: "#sobre" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contacto", href: "#contacto" },
 ];
 

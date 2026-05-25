@@ -28,7 +28,10 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL("https://dribblebros.com"),
   title: {
-    default: "Dribble Bros. — La comunidad de baloncesto hispana más grande de Latinoamérica",
+    // Bajo 60 chars para que Google/Bing no lo trunquen en SERPs.
+    // Tagline canónica del site mantiene la identidad de marca; la promesa
+    // de "comunidad más grande de Latinoamérica" vive en la description.
+    default: "Dribble Bros. — Más que baloncesto. Cultura.",
     template: "%s · Dribble Bros.",
   },
   description:

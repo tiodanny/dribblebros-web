@@ -21,6 +21,7 @@ export default function Footer() {
               <li><a href="#trabajo" className="hover:text-flame">El trabajo</a></li>
               <li><a href="#cancha-viva" className="hover:text-flame">Cancha Viva</a></li>
               <li><a href="#sobre" className="hover:text-flame">Sobre</a></li>
+              <li><a href="#faq" className="hover:text-flame">FAQ</a></li>
             </ul>
           </div>
 
