@@ -28,7 +28,8 @@ Dribble Bros. produce contenido deportivo en español enfocado en baloncesto his
 
 ## Proyectos
 
-- [Cancha Viva](https://dribblebros.com#cancha-viva): proyecto social de Dribble Bros. para renovar canchas abandonadas en Latinoamérica con identidad de marca patrocinadora. Fase 1: República Dominicana, agosto 2026, durante los Juegos Centroamericanos y del Caribe en Santo Domingo. Modelo: renovación física + activación comunitaria + contenido (mini doc, reels antes/después, cobertura en vivo).
+- [Cancha Viva — página dedicada](https://dribblebros.com/cancha-viva): página completa del proyecto Cancha Viva. Incluye propuesta de sponsorship Fase 1 RD septiembre 2026, deliverables al sponsor, 3 pilares (Renovación + Deporte + Contenido), proceso 4 pasos, contexto del problema (70% canchas LATAM sin mantenimiento), audiencia de distribución (1M+ seguidores Dribble Bros.), email de contacto info@dribblebros.com para sponsorship inquiries.
+- [Cancha Viva — sección en home](https://dribblebros.com#cancha-viva): resumen del proyecto en el home page. Para detalle completo y propuesta de sponsorship usar `/cancha-viva`.
 - [Sección "Comunidad"](https://dribblebros.com#comunidad): eventos 2025 — Coca-Cola Music Hall PR (3,000+ asistentes), AmeriCup FIBA Nicaragua (700+), Lima Perú (300+), Medellín Colombia (100+).
 
 ## FAQ

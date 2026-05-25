@@ -233,10 +233,10 @@ export default function CanchaViva() {
           </blockquote>
           <div className="flex flex-col gap-4">
             <a
-              href="#contacto"
+              href="/cancha-viva"
               className="eyebrow inline-flex items-center justify-between bg-flame text-ink px-6 py-5 hover:bg-ember transition-colors"
             >
-              Sponsorship info
+              Toda la propuesta
               <span>→</span>
             </a>
             <a

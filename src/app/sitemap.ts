@@ -24,5 +24,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    {
+      // Sub-page dedicada al proyecto Cancha Viva (Fase 1 RD Sep 2026).
+      // Priority 0.8: alta porque es contenido estratégico de
+      // sponsorship pero secundario al hub principal del site.
+      url: "https://dribblebros.com/cancha-viva",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
   ];
 }

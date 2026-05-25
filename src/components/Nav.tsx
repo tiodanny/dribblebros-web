@@ -3,14 +3,17 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+// Hrefs absolutos (`/` + anchor) para que funcionen desde sub-páginas
+// como `/cancha-viva`. Si fueran solo `#X`, intentarían navegar a
+// `/cancha-viva#numeros` que no existe.
 const LINKS = [
-  { label: "Números", href: "#numeros" },
-  { label: "Marcas", href: "#marcas" },
-  { label: "El trabajo", href: "#trabajo" },
-  { label: "Cancha Viva", href: "#cancha-viva" },
-  { label: "Sobre", href: "#sobre" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Números", href: "/#numeros" },
+  { label: "Marcas", href: "/#marcas" },
+  { label: "El trabajo", href: "/#trabajo" },
+  { label: "Cancha Viva", href: "/cancha-viva" },
+  { label: "Sobre", href: "/#sobre" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contacto", href: "/#contacto" },
 ];
 
 export default function Nav() {
@@ -34,7 +37,7 @@ export default function Nav() {
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-4 md:px-10">
         <Link
-          href="#top"
+          href="/"
           className="display text-2xl md:text-3xl tracking-tight"
           aria-label="Dribble Bros."
         >
@@ -54,7 +57,7 @@ export default function Nav() {
         </nav>
 
         <a
-          href="#contacto"
+          href="/#contacto"
           className="hidden md:inline-flex eyebrow border border-flame text-flame px-4 py-2 hover:bg-flame hover:text-ink transition-colors"
         >
           Brand Deals →
@@ -100,7 +103,7 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="#contacto"
+            href="/#contacto"
             onClick={() => setOpen(false)}
             className="eyebrow mt-4 self-start border border-flame text-flame px-4 py-2"
           >

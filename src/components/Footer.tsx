@@ -16,12 +16,12 @@ export default function Footer() {
           <div>
             <div className="eyebrow text-flame mb-4">Navegar</div>
             <ul className="flex flex-col gap-2 text-white/70">
-              <li><a href="#numeros" className="hover:text-flame">Números</a></li>
-              <li><a href="#marcas" className="hover:text-flame">Marcas</a></li>
-              <li><a href="#trabajo" className="hover:text-flame">El trabajo</a></li>
-              <li><a href="#cancha-viva" className="hover:text-flame">Cancha Viva</a></li>
-              <li><a href="#sobre" className="hover:text-flame">Sobre</a></li>
-              <li><a href="#faq" className="hover:text-flame">FAQ</a></li>
+              <li><a href="/#numeros" className="hover:text-flame">Números</a></li>
+              <li><a href="/#marcas" className="hover:text-flame">Marcas</a></li>
+              <li><a href="/#trabajo" className="hover:text-flame">El trabajo</a></li>
+              <li><a href="/cancha-viva" className="hover:text-flame">Cancha Viva</a></li>
+              <li><a href="/#sobre" className="hover:text-flame">Sobre</a></li>
+              <li><a href="/#faq" className="hover:text-flame">FAQ</a></li>
             </ul>
           </div>
 
@@ -31,7 +31,7 @@ export default function Footer() {
               <li>Dribble Bros. LLC</li>
               <li>San Juan, Puerto Rico</li>
               <li>
-                <a href="#contacto" className="hover:text-flame">
+                <a href="/#contacto" className="hover:text-flame">
                   info@dribblebros.com
                 </a>
               </li>
