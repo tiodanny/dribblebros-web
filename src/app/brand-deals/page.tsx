@@ -34,12 +34,21 @@ export const metadata: Metadata = {
     title: "Brand Deals — 6 marcas globales inbound · Dribble Bros.",
     description:
       "McDonald's PR · Miller Lite · OREO · Brava · Texaco · Red Beak Trips. Todas inbound, sin agencia. Audiencia 1M+ en 15+ países hispanos.",
+    images: [
+      {
+        url: "/logos/db-face.png",
+        width: 1218,
+        height: 1249,
+        alt: "Brand Deals — Dribble Bros.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Brand Deals · Dribble Bros.",
     description:
       "6 marcas globales en 2025 — todas inbound. La comunidad de baloncesto hispano más grande de LATAM.",
+    images: ["/logos/db-face.png"],
   },
 };
 

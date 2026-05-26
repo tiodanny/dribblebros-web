@@ -35,12 +35,21 @@ export const metadata: Metadata = {
     title: "Cancha Viva — Tu marca grabada en el cemento.",
     description:
       "Renovamos canchas abandonadas en LATAM con identidad del sponsor. Fase 1: RD durante los Juegos Centroamericanos 2026.",
+    images: [
+      {
+        url: "/logos/db-face.png",
+        width: 1218,
+        height: 1249,
+        alt: "Cancha Viva — Dribble Bros.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cancha Viva — Dribble Bros.",
     description:
       "Renovación física + comunidad + contenido a 1M+ audiencia. Fase 1: RD septiembre 2026.",
+    images: ["/logos/db-face.png"],
   },
 };
 

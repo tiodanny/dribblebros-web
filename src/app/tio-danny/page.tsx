@@ -37,12 +37,19 @@ export const metadata: Metadata = {
     title: "Tío Danny — Co-Founder de Dribble Bros.",
     description:
       "Daniel Martínez (Tío Danny). Estratega de contenido digital. Director creativo de la comunidad de baloncesto hispano más grande de Latinoamérica.",
+    images: [
+      {
+        url: "/photos/founders/danny/danny-01.jpg",
+        alt: "Tío Danny — Daniel Martínez",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Tío Danny — Co-Founder Dribble Bros.",
     description:
       "Daniel Martínez. Estratega + director creativo. Desde San Juan, PR.",
+    images: ["/photos/founders/danny/danny-01.jpg"],
   },
 };
 

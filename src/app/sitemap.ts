@@ -56,5 +56,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      // Press kit — para periodistas y AI queries "Dribble Bros press kit"
+      url: "https://dribblebros.com/press",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      // Eventos catalog — Event schemas para cada activación. Cobertura
+      // alta de queries sobre presencia internacional + sponsorship intent.
+      url: "https://dribblebros.com/eventos",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 }

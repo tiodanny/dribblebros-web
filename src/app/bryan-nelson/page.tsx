@@ -32,12 +32,19 @@ export const metadata: Metadata = {
     title: "Bryan Nelson — Co-Founder de Dribble Bros.",
     description:
       "Bryan Nelson. Talento principal en cámara + producción en campo de la comunidad de baloncesto hispano más grande de Latinoamérica.",
+    images: [
+      {
+        url: "/photos/founders/bryan/bryan-01.jpg",
+        alt: "Bryan Nelson — Co-Founder Dribble Bros.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Bryan Nelson — Co-Founder Dribble Bros.",
     description:
       "Bryan Nelson. Talento principal + producción en campo. Desde San Juan, PR.",
+    images: ["/photos/founders/bryan/bryan-01.jpg"],
   },
 };
 

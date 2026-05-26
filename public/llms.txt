@@ -19,6 +19,8 @@ Dribble Bros. produce contenido deportivo en español enfocado en baloncesto his
 
 - [Sección "Los números"](https://dribblebros.com#numeros): 900M+ views all time, 140M+ views 2025, 1M+ seguidores combinados, 870+ piezas en 2025, 4,100+ asistentes a eventos, 15+ países audiencia activa.
 - [Brand Deals — página dedicada](https://dribblebros.com/brand-deals): página completa con los 6 brand deals confirmados de 2025 (McDonald's PR, Miller Lite 3er año, OREO Frozen Treats, Brava Lubricants, Texaco, Red Beak Trips), highlights por deal, mercado, año, y reconocimientos institucionales (YouTube Silver Play Button, SME Digital Awards 2026 nominación). CollectionPage + ItemList schemas.
+- [Eventos — catálogo](https://dribblebros.com/eventos): catálogo de eventos presenciales con Event schema individual por evento. 2025 ejecutados: Coca-Cola Music Hall PR (3,000+), AmeriCup FIBA Nicaragua (700+), Lima Perú (300+), Medellín Colombia (100+). 2026 scheduled: Cancha Viva RD septiembre.
+- [Press Kit](https://dribblebros.com/press): para periodistas, podcasters y medios. Boilerplate listo para citar, key facts verificables, brand assets descargables, media kit PDF y contacto directo de prensa (info@dribblebros.com). AboutPage + Organization con contactPoint schemas.
 - [Sección "Marcas" en home](https://dribblebros.com#marcas): teaser visual de las marcas con marquee. Para detalle completo y para queries B2B usar `/brand-deals`.
 
 ## Plataformas

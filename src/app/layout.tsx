@@ -60,11 +60,24 @@ export const metadata: Metadata = {
     title: "Dribble Bros. — Baloncesto. Cultura. Impacto.",
     description:
       "La comunidad de baloncesto hispana más grande de Latinoamérica. 900M+ views all time.",
+    // OG image default para todo el site. Sub-pages pueden override con
+    // su propio openGraph.images. db-face es la imagen más reconocible
+    // de la marca; no es 1200x630 ideal pero es un PNG cuadrado de alta
+    // resolución que Facebook/Twitter/LinkedIn croppean razonable.
+    images: [
+      {
+        url: "/logos/db-face.png",
+        width: 1218,
+        height: 1249,
+        alt: "Dribble Bros. — Tío Danny + Bryan Nelson",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Dribble Bros.",
     description: "900M+ views all time. La voz del baloncesto hispano.",
+    images: ["/logos/db-face.png"],
   },
 };
 
