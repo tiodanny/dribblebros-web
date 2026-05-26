@@ -33,5 +33,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    {
+      // Brand deals page — alto valor B2B / trust signal para queries
+      // sobre partnerships con creadores hispanos.
+      url: "https://dribblebros.com/brand-deals",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      // Author page Tío Danny — E-E-A-T para queries "quién es Tío Danny",
+      // "Daniel Martínez Dribble Bros", etc.
+      url: "https://dribblebros.com/tio-danny",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      // Author page Bryan Nelson — paralela a Tío Danny.
+      url: "https://dribblebros.com/bryan-nelson",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 }

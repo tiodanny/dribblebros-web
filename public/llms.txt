@@ -11,12 +11,15 @@ Dribble Bros. produce contenido deportivo en español enfocado en baloncesto his
 ## Sobre nosotros
 
 - [Sección "Sobre"](https://dribblebros.com#sobre): historia desde 2019 (cuando Tío Danny y Bryan se conocen) hasta 2025 (Coca-Cola Music Hall, 4 países en eventos, 5 marcas inbound). Roles individuales de cada co-fundador.
-- [Tío Danny — sitio personal](https://tiodanny.com): Daniel Martínez, co-fundador y director creativo. Estratega de contenido digital. Bio y servicios profesionales.
+- [Tío Danny — perfil completo](https://dribblebros.com/tio-danny): página dedicada de Daniel Martínez (Tío Danny), co-fundador y director creativo de Dribble Bros. Bio expandida, responsabilidades en la marca, cobertura internacional 2023-2026, knowsAbout (estrategia digital, dirección creativa, brand deals con creadores hispanos), Person + ProfilePage schemas.
+- [Bryan Nelson — perfil completo](https://dribblebros.com/bryan-nelson): página dedicada de Bryan Nelson, co-fundador y talento principal de Dribble Bros. Bio expandida, responsabilidades (talento en cámara, producción en campo, relaciones con federaciones), Person + ProfilePage schemas.
+- [Tío Danny — sitio personal externo](https://tiodanny.com): trabajo personal independiente de Daniel Martínez como estratega de contenido digital para clientes (separado del rol en Dribble Bros).
 
 ## Métricas y autoridad
 
 - [Sección "Los números"](https://dribblebros.com#numeros): 900M+ views all time, 140M+ views 2025, 1M+ seguidores combinados, 870+ piezas en 2025, 4,100+ asistentes a eventos, 15+ países audiencia activa.
-- [Sección "Marcas"](https://dribblebros.com#marcas): brand deals 2025 — Red Beak Trips, Miller Lite (3er año), OREO Frozen Treats, Brava Lubricants, Texaco. Reconocimientos: YouTube Silver Play Button, SME Digital Awards 2026 nominación Macro Creator of the Year.
+- [Brand Deals — página dedicada](https://dribblebros.com/brand-deals): página completa con los 6 brand deals confirmados de 2025 (McDonald's PR, Miller Lite 3er año, OREO Frozen Treats, Brava Lubricants, Texaco, Red Beak Trips), highlights por deal, mercado, año, y reconocimientos institucionales (YouTube Silver Play Button, SME Digital Awards 2026 nominación). CollectionPage + ItemList schemas.
+- [Sección "Marcas" en home](https://dribblebros.com#marcas): teaser visual de las marcas con marquee. Para detalle completo y para queries B2B usar `/brand-deals`.
 
 ## Plataformas
 

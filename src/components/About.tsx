@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const FOUNDERS: Array<{
@@ -11,7 +12,10 @@ const FOUNDERS: Array<{
   photo: string;
   photoPosition: string;
   photoScale: number;
-  url?: string;
+  /** Author/bio page interna en dribblebros.com (siempre existe). */
+  internalUrl: string;
+  /** Sitio personal externo si el founder tiene uno (Danny → tiodanny.com). */
+  externalUrl?: string;
 }> = [
   {
     name: "Tío Danny",
@@ -27,7 +31,8 @@ const FOUNDERS: Array<{
     photo: "/photos/founders/danny/danny-01.jpg",
     photoPosition: "40% 72%",
     photoScale: 1.7,
-    url: "https://tiodanny.com",
+    internalUrl: "/tio-danny",
+    externalUrl: "https://tiodanny.com",
   },
   {
     name: "Bryan Nelson",
@@ -43,6 +48,7 @@ const FOUNDERS: Array<{
     photo: "/photos/founders/bryan/bryan-01.jpg",
     photoPosition: "center",
     photoScale: 1,
+    internalUrl: "/bryan-nelson",
   },
 ];
 
@@ -113,21 +119,15 @@ export default function About() {
                   </div>
                 </div>
                 <div className="absolute bottom-6 left-6 right-6">
-                  {f.url ? (
-                    <a
-                      href={f.url}
-                      rel="author noopener"
-                      target="_blank"
-                      className="display text-4xl md:text-6xl text-white leading-none hover:text-flame transition-colors block"
-                      aria-label={`${f.name} — sitio personal`}
-                    >
-                      {f.name}
-                    </a>
-                  ) : (
-                    <div className="display text-4xl md:text-6xl text-white leading-none">
-                      {f.name}
-                    </div>
-                  )}
+                  {/* Nombre linkea a la author page interna de dribblebros.com.
+                      Mejora E-E-A-T y permite navegar a la bio extendida. */}
+                  <Link
+                    href={f.internalUrl}
+                    className="display text-4xl md:text-6xl text-white leading-none hover:text-flame transition-colors block"
+                    aria-label={`${f.name} — perfil completo`}
+                  >
+                    {f.name}
+                  </Link>
                 </div>
               </div>
 
@@ -146,6 +146,25 @@ export default function About() {
                     </li>
                   ))}
                 </ul>
+
+                <div className="mt-8 pt-6 border-t border-white/15 flex flex-wrap gap-3">
+                  <Link
+                    href={f.internalUrl}
+                    className="eyebrow inline-flex items-center gap-2 text-flame hover:text-ember transition-colors"
+                  >
+                    Perfil completo →
+                  </Link>
+                  {f.externalUrl ? (
+                    <a
+                      href={f.externalUrl}
+                      rel="author noopener"
+                      target="_blank"
+                      className="eyebrow inline-flex items-center gap-2 text-white/60 hover:text-flame transition-colors"
+                    >
+                      Sitio personal ↗
+                    </a>
+                  ) : null}
+                </div>
               </div>
             </motion.div>
           ))}
