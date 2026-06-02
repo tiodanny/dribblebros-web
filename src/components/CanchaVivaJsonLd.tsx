@@ -43,9 +43,24 @@ const eventSchema = {
     name: "Dribble Bros.",
     url: "https://dribblebros.com",
   },
+  // Performer — DB es host/creador principal del evento.
+  performer: {
+    "@type": "Organization",
+    name: "Dribble Bros.",
+    url: "https://dribblebros.com",
+  },
+  // Offers — entrada libre durante Juegos Centroamericanos 2026.
+  offers: {
+    "@type": "Offer",
+    url: "https://dribblebros.com/cancha-viva",
+    price: "0",
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
+    validFrom: "2026-09-01",
+  },
   isAccessibleForFree: true,
   inLanguage: "es",
-  image: "https://dribblebros.com/logos/db-face.png",
+  image: ["https://dribblebros.com/logos/db-face.png"],
   url: "https://dribblebros.com/cancha-viva",
   about: [
     "Renovación de canchas de baloncesto",

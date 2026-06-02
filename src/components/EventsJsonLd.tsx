@@ -27,6 +27,8 @@ const STATUS_URL: Record<"completed" | "scheduled", string> = {
   scheduled: "https://schema.org/EventScheduled",
 };
 
+const DEFAULT_EVENT_IMAGE = "https://dribblebros.com/logos/db-face.png";
+
 const eventSchemas = EVENTS.map((e) => ({
   "@context": "https://schema.org",
   "@type": "Event",
@@ -37,6 +39,11 @@ const eventSchemas = EVENTS.map((e) => ({
   endDate: e.endDate,
   eventStatus: STATUS_URL[e.status],
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  // Image — recommended by Google for richer Event card display.
+  // Use event photo if available, fallback to default DB face logo.
+  image: [
+    e.photo ? `https://dribblebros.com${e.photo}` : DEFAULT_EVENT_IMAGE,
+  ],
   location: {
     "@type": "Place",
     name: e.venue,
@@ -50,6 +57,27 @@ const eventSchemas = EVENTS.map((e) => ({
     "@type": "Organization",
     name: "Dribble Bros.",
     url: "https://dribblebros.com",
+  },
+  // Performer — todos los eventos son activaciones de Dribble Bros.
+  // como creador/host principal. Google recomienda performer para Events.
+  performer: {
+    "@type": "Organization",
+    name: "Dribble Bros.",
+    url: "https://dribblebros.com",
+  },
+  // Offers — todos los eventos de DB son gratuitos para asistencia
+  // presencial (entrada libre / RSVP). Google recomienda offers aunque
+  // sean gratis (price 0).
+  offers: {
+    "@type": "Offer",
+    url: `https://dribblebros.com/eventos#${e.slug}`,
+    price: "0",
+    priceCurrency: "USD",
+    availability:
+      e.status === "completed"
+        ? "https://schema.org/SoldOut"
+        : "https://schema.org/InStock",
+    validFrom: e.startDate,
   },
   url: `https://dribblebros.com/eventos#${e.slug}`,
   inLanguage: "es",
