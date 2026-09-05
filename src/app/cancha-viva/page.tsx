@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 import CanchaVivaJsonLd from "@/components/CanchaVivaJsonLd";
 
 /**
@@ -56,7 +54,6 @@ export const metadata: Metadata = {
 export default function CanchaVivaPage() {
   return (
     <>
-      <Nav />
       <CanchaVivaJsonLd />
       <main>
         {/* HERO */}
@@ -498,7 +495,6 @@ export default function CanchaVivaPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

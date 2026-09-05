@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 import BrandDealsJsonLd from "@/components/BrandDealsJsonLd";
 import { BRAND_DEALS, RECOGNITIONS } from "@/lib/brandDeals";
 
@@ -55,7 +53,6 @@ export const metadata: Metadata = {
 export default function BrandDealsPage() {
   return (
     <>
-      <Nav />
       <BrandDealsJsonLd />
       <main>
         {/* HERO */}
@@ -274,7 +271,6 @@ export default function BrandDealsPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

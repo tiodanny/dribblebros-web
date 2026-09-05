@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 import BryanNelsonJsonLd from "@/components/BryanNelsonJsonLd";
 
 /**
@@ -51,7 +49,6 @@ export const metadata: Metadata = {
 export default function BryanNelsonPage() {
   return (
     <>
-      <Nav />
       <BryanNelsonJsonLd />
       <main>
         {/* HERO */}
@@ -274,7 +271,6 @@ export default function BryanNelsonPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

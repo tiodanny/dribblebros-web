@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 import PressJsonLd from "@/components/PressJsonLd";
 
 /**
@@ -85,7 +83,6 @@ const BRAND_ASSETS = [
 export default function PressPage() {
   return (
     <>
-      <Nav />
       <PressJsonLd />
       <main>
         {/* HERO */}
@@ -307,7 +304,6 @@ export default function PressPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

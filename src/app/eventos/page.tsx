@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 import EventsJsonLd from "@/components/EventsJsonLd";
 import { EVENTS } from "@/lib/eventsData";
 
@@ -86,7 +84,6 @@ export default function EventosPage() {
 
   return (
     <>
-      <Nav />
       <EventsJsonLd />
       <main>
         {/* HERO */}
@@ -303,7 +300,6 @@ export default function EventosPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

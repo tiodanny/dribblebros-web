@@ -4,6 +4,8 @@ import Script from "next/script";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
 import JsonLd from "@/components/JsonLd";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 const bebas = Bebas_Neue({
   variable: "--font-bebas",
@@ -93,7 +95,11 @@ export default function RootLayout({
     >
       <body className="min-h-full bg-ink text-white grain">
         <JsonLd />
-        <LenisProvider>{children}</LenisProvider>
+        <LenisProvider>
+          <Nav />
+          {children}
+          <Footer />
+        </LenisProvider>
         <Script id="ms-clarity" strategy="afterInteractive">
           {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","wfabi5po1a");`}
         </Script>

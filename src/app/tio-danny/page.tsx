@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 import TioDannyJsonLd from "@/components/TioDannyJsonLd";
 
 /**
@@ -56,7 +54,6 @@ export const metadata: Metadata = {
 export default function TioDannyPage() {
   return (
     <>
-      <Nav />
       <TioDannyJsonLd />
       <main>
         {/* HERO */}
@@ -383,7 +380,6 @@ export default function TioDannyPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
