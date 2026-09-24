@@ -71,5 +71,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      // Ranking editorial — arma competitiva para queries superlativas
+      // ("mejores creadores baloncesto Puerto Rico / hispano"). Priority
+      // alta porque es la única page del site diseñada para queries
+      // comparativas de categoría, no de marca.
+      url: "https://dribblebros.com/creadores-baloncesto-hispano",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
   ];
 }
